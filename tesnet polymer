@@ -1,0 +1,289 @@
+ HISTFILE=/workspace/.gitpod/cmd-0 history -r; {
+npm install
+}
+gitpod /workspace/polymer-testnet (main) $  HISTFILE=/workspace/.gitpod/cmd-0 history -r; {
+> npm install
+> }
+
+added 586 packages, and audited 587 packages in 12s
+
+97 packages are looking for funding
+  run `npm fund` for details
+
+1 low severity vulnerability
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+gitpod /workspace/polymer-testnet (main) $ nvm use 20
+Now using node v20.11.1 (npm v10.2.4)
+gitpod /workspace/polymer-testnet (main) $ curl -L https://foundry.paradigm.xyz | bash
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100  2189  100  2189    0     0  17207      0 --:--:-- --:--:-- --:--:-- 17207
+Installing foundryup...
+
+Detected your preferred shell is bash and added foundryup to PATH.
+Run 'source /home/gitpod/.bashrc' or start a new terminal session to use foundryup.
+Then, simply run 'foundryup' to install Foundry.
+gitpod /workspace/polymer-testnet (main) $ source /home/gitpod/.bashrc
+gitpod /workspace/polymer-testnet (main) $ foundryup
+
+
+.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx
+ 
+ ╔═╗ ╔═╗ ╦ ╦ ╔╗╔ ╔╦╗ ╦═╗ ╦ ╦         Portable and modular toolkit
+ ╠╣  ║ ║ ║ ║ ║║║  ║║ ╠╦╝ ╚╦╝    for Ethereum Application Development 
+ ╚   ╚═╝ ╚═╝ ╝╚╝ ═╩╝ ╩╚═  ╩                 written in Rust.
+
+.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx
+
+Repo       : https://github.com/foundry-rs/
+Book       : https://book.getfoundry.sh/                      
+Chat       : https://t.me/foundry_rs/                         
+Support    : https://t.me/foundry_support/
+Contribute : https://github.com/orgs/foundry-rs/projects/2/
+
+.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx.xOx
+
+foundryup: installing foundry (version nightly, tag nightly)
+foundryup: downloading latest forge, cast, anvil, and chisel
+############################################################################################################ 100.0%
+foundryup: downloading manpages
+############################################################################################################ 100.0%
+foundryup: installed - forge 0.2.0 (9f6bb3b 2024-03-11T00:16:01.716842530Z)
+foundryup: installed - cast 0.2.0 (9f6bb3b 2024-03-11T00:16:01.714290291Z)
+foundryup: installed - anvil 0.2.0 (9f6bb3b 2024-03-11T00:16:01.699797135Z)
+foundryup: installed - chisel 0.2.0 (9f6bb3b 2024-03-11T00:16:01.699381075Z)
+foundryup: done!
+gitpod /workspace/polymer-testnet (main) $ wget -qO - 'https://proget.makedeb.org/debian-feeds/prebuilt-mpr.pub' | gpg --dearmor | sudo tee /usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg 1> /dev/null
+echo "deb [arch=all,$(dpkg --print-architecture) signed-by=/usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg] https://proget.makedeb.org prebuilt-mpr $(lsb_release -cs)" | sudo tee /etc/apt/sources.list.d/prebuilt-mpr.list
+sudo apt update
+deb [arch=all,amd64 signed-by=/usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg] https://proget.makedeb.org prebuilt-mpr jammy
+Get:1 https://download.docker.com/linux/ubuntu jammy InRelease [48.8 kB]
+Get:3 https://download.docker.com/linux/ubuntu jammy/stable amd64 Packages [32.6 kB]                              
+Get:4 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]                                         
+Get:2 https://packagecloud.io/github/git-lfs/ubuntu jammy InRelease [28.0 kB]                                     
+Ign:6 https://proget.makedeb.org prebuilt-mpr InRelease                                                           
+Get:7 https://packagecloud.io/github/git-lfs/ubuntu jammy/main amd64 Packages [1,842 B]             
+Hit:8 https://ppa.launchpadcontent.net/git-core/ppa/ubuntu jammy InRelease                                        
+Hit:9 http://archive.ubuntu.com/ubuntu jammy InRelease                                               
+Get:10 https://proget.makedeb.org prebuilt-mpr Release [8,442 B]               
+Get:11 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]                                         
+Get:12 https://proget.makedeb.org prebuilt-mpr Release.gpg [819 B]                                              
+Get:13 https://ppa.launchpadcontent.net/ondrej/apache2/ubuntu jammy InRelease [23.8 kB]                           
+Get:14 https://ppa.launchpadcontent.net/ondrej/nginx-mainline/ubuntu jammy InRelease [23.8 kB]                   
+Get:15 https://proget.makedeb.org prebuilt-mpr/jammy amd64 Packages [254 kB]                                      
+Get:16 https://ppa.launchpadcontent.net/ondrej/php/ubuntu jammy InRelease [23.9 kB]                               
+Get:5 https://apt.llvm.org/jammy llvm-toolchain-jammy-17 InRelease [6,833 B]                                      
+Get:17 https://apt.llvm.org/jammy llvm-toolchain-jammy-17/main amd64 Packages [12.4 kB]                           
+Get:18 https://ppa.launchpadcontent.net/ondrej/apache2/ubuntu jammy/main amd64 Packages [4,922 B]                 
+Get:19 https://ppa.launchpadcontent.net/ondrej/nginx-mainline/ubuntu jammy/main amd64 Packages [9,152 B]          
+Get:20 https://proget.makedeb.org prebuilt-mpr/jammy all Packages [17.0 kB]                                       
+Get:21 https://ppa.launchpadcontent.net/ondrej/php/ubuntu jammy/main amd64 Packages [207 kB]                      
+Get:22 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [1,951 kB]
+Hit:23 http://archive.ubuntu.com/ubuntu jammy-backports InRelease                          
+Get:24 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1,349 kB]   
+Get:25 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1,846 kB]                   
+Get:26 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [1,997 kB]     
+Get:27 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1,561 kB]                            
+Get:28 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [1,076 kB]                        
+Fetched 10.7 MB in 17s (621 kB/s)                                                                                 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+21 packages can be upgraded. Run 'apt list --upgradable' to see them.
+gitpod /workspace/polymer-testnet (main) $ sudo apt install just
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  just
+0 upgraded, 1 newly installed, 0 to remove and 21 not upgraded.
+Need to get 1,225 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+Get:1 https://proget.makedeb.org prebuilt-mpr/jammy amd64 just amd64 1.14.0-2 [1,225 kB]
+Fetched 1,225 kB in 1s (1,804 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package just.
+(Reading database ... 35599 files and directories currently installed.)
+Preparing to unpack .../just_1.14.0-2_amd64.deb ...
+Unpacking just (1.14.0-2) ...
+Setting up just (1.14.0-2) ...
+Processing triggers for man-db (2.10.2-1) ...
+gitpod /workspace/polymer-testnet (main) $ just install
+echo "Installing dependencies"
+Installing dependencies
+npm install
+
+up to date, audited 587 packages in 873ms
+
+97 packages are looking for funding
+  run `npm fund` for details
+
+1 low severity vulnerability
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+forge install
+Updating dependencies in /workspace/polymer-testnet/lib
+gitpod /workspace/polymer-testnet (main) $ cp .env.example .env
+gitpod /workspace/polymer-testnet (main) $ just do-it
+echo "Running the full E2E flow..."
+Running the full E2E flow...
+just set-contracts optimism XCounter && just set-contracts base XCounter
+echo "Updating config.json with contract type..."
+Updating config.json with contract type...
+node scripts/set-contracts-config.js optimism XCounter
+echo "Updating config.json with contract type..."
+Updating config.json with contract type...
+node scripts/set-contracts-config.js base XCounter
+just deploy optimism base false
+Deploying contracts with Hardhat...
+
+          ✅   Deployment Successful   ✅
+          -------------------------------
+          📄 Contract Type: XCounter
+          📍 Address: 0xd130B78B6FD0faEb738ad1a0dCFb087237d7E4Ac
+          🌍 Network: optimism
+          -------------------------------
+
+      
+Updated config.json with address 0xd130B78B6FD0faEb738ad1a0dCFb087237d7E4Ac on network optimism
+
+          ✅   Deployment Successful   ✅
+          -------------------------------
+          📄 Contract Type: XCounter
+          📍 Address:0xd130B78B6FD0faEb738ad1a0dCFb087237d7E4Ac
+          🌍 Network: base
+          -------------------------------
+
+      
+Updated config.json with address 0xd130B78B6FD0faEb738ad1a0dCFb087237d7E4Ac on network base
+just create-channel
+echo "Attempting to create a channel with the values from the config..."
+Attempting to create a channel with the values from the config...
+node scripts/create-channel-config.js
+👂 Listening for IBC channel events on optimism...
+👂 Listening for IBC channel events on base...
+
+          -------------------------------------------
+
+          🙋‍♀️   CHANNEL OPEN INIT !!!   🙋‍♀️
+
+          -------------------------------------------
+          🔔 Event name: OpenIbcChannel
+          ⛓️  Network: optimism
+          🔗 Port Address:0xd130B78B6FD0faEb738ad1a0dCFb087237d7E4Ac
+          🔗 Counterparty Port ID: polyibc.base-sim.b6056Ed5C73E5696A9d7Faa64Da5C866F6b412B3
+          🛣️  Counterparty Channel ID: 
+          🦘 Connection Hops: connection-0,connection-5
+          🔀 Ordering: 0
+          💰 Fee Enabled: false
+          #️⃣  Version: 1.0
+          -------------------------------------------
+          🧾 TxHash: 0xd13a776bee53290d1eb086a637f0ee7b345a9b4a50401275018bf3e702b3452d
+          🔍 Explorer URL: https://optimism-sepolia.blockscout.com/tx/0xd13a776bee53290d1eb086a637f0ee7b345a9b4a50401275018bf3e702b3452d
+          -------------------------------------------
+
+ ⏱️  Waiting for channel open try...
+
+          -------------------------------------------
+
+          👩‍❤️‍💋‍👨   CHANNEL OPEN ACK !!!   👩‍❤️‍💋‍👨
+
+          -------------------------------------------
+          🔔 Event name: ConnectIbcChannel
+          ⛓️  Network: optimism
+          🔗 Port Address: 0xd130B78B6FD0faEb738ad1a0dCFb087237d7E4Ac
+          🛣️  Channel ID: channel-12468
+          -------------------------------------------
+          🧾 TxHash: 0xd13a776bee53290d1eb086a637f0ee7b345a9b4a50401275018bf3e702b3452d
+          🔍 Explorer URL: https://optimism-sepolia.blockscout.com/tx/0xd13a776bee53290d1eb086a637f0ee7b345a9b4a50401275018bf3e702b3452d
+          -------------------------------------------
+
+ ⏱️  Waiting for channel open confirm...
+
+          🎊   Created Channel   🎊
+          -----------------------------------------
+          🛣️  Channel ID: channel-12468
+          🔗 Port ID: polyibc.optimism-sim.b6056Ed5C73E5696A9d7Faa64Da5C866F6b412B3
+          🌍 Network: optimism
+          -----------------------------------------
+          🛣️  Counterparty Channel ID: channel-12469
+          🪐 Counterparty Network: base
+          -----------------------------------------
+
+Updated config.json with channel-12468 on network optimism and channel-12469 on network base
+just send-packet optimism false
+Attempting to send a packet over a custom channel as defined in the config...
+👂 Listening for IBC packet events on optimism...
+👂 Listening for IBC packet events on base...
+Fetching IBC app on optimism at address: 0xd130B78B6FD0faEb738ad1a0dCFb087237d7E4Ac
+ 
+          -------------------------------------------
+          📦 📮   PACKET HAS BEEN SENT !!!   📦 📮
+          -------------------------------------------
+          🔔 Event name: SendPacket
+          ⛓️  Network: optimism
+          🔗 Source Port Address: 0xd130B78B6FD0faEb738ad1a0dCFb087237d7E4Ac
+          🛣️  Source Channel ID: channel-12468
+          📈 Sequence: 1
+          ⏳ Timeout Timestamp: 1710191898000000000
+          -------------------------------------------
+          🧾 TxHash: 0xd13a776bee53290d1eb086a637f0ee7b345a9b4a50401275018bf3e702b3452d
+          🔍 Explorer URL: https://optimism-sepolia.blockscout.com/tx/0xd13a776bee53290d1eb086a637f0ee7b345a9b4a50401275018bf3e702b3452d
+          -------------------------------------------
+
+ ⏱️  Waiting for packet receipt...
+
+          -------------------------------------------
+          📦 📬   PACKET IS RECEIVED !!!   📦 📬
+          -------------------------------------------
+          🔔 Event name: RecvPacket
+          ⛓️  Network: base
+          🔗 Destination Port Address: 0xd130B78B6FD0faEb738ad1a0dCFb087237d7E4Ac
+          🛣️  Destination Channel ID: channel-12469
+          📈 Sequence: 1
+          -------------------------------------------
+          🧾 TxHash:0xd13a776bee53290d1eb086a637f0ee7b345a9b4a50401275018bf3e702b3452d
+          🔍 Explorer URL: https://base-sepolia.blockscout.com/tx/0xd13a776bee53290d1eb086a637f0ee7b345a9b4a50401275018bf3e702b3452d
+          -------------------------------------------
+
+ ⏱️  Waiting for write acknowledgement...
+ 
+          -------------------------------------------
+          📦 📝   ACKNOWLEDGEMENT WRITTEN !!!   📦 📝
+          -------------------------------------------
+          🔔 Event name: WriteAckPacket
+          ⛓️  Network: base
+          🔗 Destination Port Address: 0xd130B78B6FD0faEb738ad1a0dCFb087237d7E4Ac
+          🛣️  Channel ID: channel-12469
+          📈 Sequence: 1
+          -------------------------------------------
+          🧾 TxHash: 0xd13a776bee53290d1eb086a637f0ee7b345a9b4a50401275018bf3e702b3452d
+          🔍 Explorer URL: https://base-sepolia.blockscout.com/tx/0xd13a776bee53290d1eb086a637f0ee7b345a9b4a50401275018bf3e702b3452d
+          -------------------------------------------
+
+ ⏱️  Waiting for acknowledgement...
+   
+          -------------------------------------------
+          📦 🏁   PACKET IS ACKNOWLEDGED !!!   📦 🏁
+          -------------------------------------------
+          🔔 Event name: Acknowledgement
+          ⛓️  Network: optimism
+          🔗 Source Port Address: 0xd130B78B6FD0faEb738ad1a0dCFb087237d7E4Ac
+          🛣️  Source Channel ID: channel-12468
+          📈 Sequence: 1
+          -------------------------------------------
+          🧾 TxHash: 0xd13a776bee53290d1eb086a637f0ee7b345a9b4a50401275018bf3e702b3452d
+          🔍 Explorer URL: https://optimism-sepolia.blockscout.com/tx/0xd13a776bee53290d1eb086a637f0ee7b345a9b4a50401275018bf3e702b3452d
+          -------------------------------------------
+
+echo "You've done it!"
+You've done it!
+gitpod /workspace/polymer-testnet (main) $ 
